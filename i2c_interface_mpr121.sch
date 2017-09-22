@@ -1,33 +1,5 @@
 EESchema Schematic File Version 3
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:i2c_interface_mpr121
 LIBS:components
 LIBS:i2c_interface_mpr121-cache
@@ -528,5 +500,85 @@ Text Label 6600 5500 0    60   ~ 0
 IN_10
 Text Label 6600 5600 0    60   ~ 0
 IN_11
-NoConn ~ 4300 5100
+Wire Wire Line
+	4300 5100 4200 5100
+Text Label 4200 5100 2    60   ~ 0
+ADDR
+Wire Wire Line
+	8000 4550 7900 4550
+Text Label 7900 4550 2    60   ~ 0
+ADDR
+Wire Wire Line
+	8000 5200 7900 5200
+Text Label 7900 5200 2    60   ~ 0
+ADDR
+Wire Wire Line
+	8000 5850 7900 5850
+Text Label 7900 5850 2    60   ~ 0
+ADDR
+$Comp
+L VEE #PWR012
+U 1 1 59C53808
+P 7950 4400
+F 0 "#PWR012" H 7950 4250 50  0001 C CNN
+F 1 "VEE" H 7967 4573 50  0000 C CNN
+F 2 "" H 7950 4400 50  0001 C CNN
+F 3 "" H 7950 4400 50  0001 C CNN
+	1    7950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4400 7950 4450
+Wire Wire Line
+	7950 4450 8000 4450
+Wire Wire Line
+	8000 5100 7900 5100
+Wire Wire Line
+	8000 5750 7900 5750
+Text Label 7900 5100 2    60   ~ 0
+SDA
+Text Label 7900 5750 2    60   ~ 0
+SCL
+$Comp
+L HEADER_01X02 S1
+U 1 1 59C55055
+P 8200 4500
+F 0 "S1" H 8200 4650 50  0000 C CNN
+F 1 "HEADER_01X02" V 8300 4500 50  0000 C CNN
+F 2 "i2c_interface_mpr121:HEADER_01x02" H 8100 4550 60  0001 C CNN
+F 3 "" H 8200 4500 60  0000 C CNN
+F 4 "digikey" H 8300 4750 60  0001 C CNN "Vendor"
+F 5 "609-3500-ND" H 8400 4850 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 2POS .100 VERT GOLD" H 8500 4950 60  0001 C CNN "Description"
+	1    8200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_01X02 S2
+U 1 1 59C55201
+P 8200 5150
+F 0 "S2" H 8200 5300 50  0000 C CNN
+F 1 "HEADER_01X02" V 8300 5150 50  0000 C CNN
+F 2 "i2c_interface_mpr121:HEADER_01x02" H 8100 5200 60  0001 C CNN
+F 3 "" H 8200 5150 60  0000 C CNN
+F 4 "digikey" H 8300 5400 60  0001 C CNN "Vendor"
+F 5 "609-3500-ND" H 8400 5500 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 2POS .100 VERT GOLD" H 8500 5600 60  0001 C CNN "Description"
+	1    8200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_01X02 S3
+U 1 1 59C5529D
+P 8200 5800
+F 0 "S3" H 8200 5950 50  0000 C CNN
+F 1 "HEADER_01X02" V 8300 5800 50  0000 C CNN
+F 2 "i2c_interface_mpr121:HEADER_01x02" H 8100 5850 60  0001 C CNN
+F 3 "" H 8200 5800 60  0000 C CNN
+F 4 "digikey" H 8300 6050 60  0001 C CNN "Vendor"
+F 5 "609-3500-ND" H 8400 6150 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 2POS .100 VERT GOLD" H 8500 6250 60  0001 C CNN "Description"
+	1    8200 5800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
